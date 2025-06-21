@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: "MADE TOMMY";
+  src: url("/fonts/MADE-TOMMY/MADE-TOMMY-Regular.woff2") format("woff2"),
+       url("/fonts/MADE-TOMMY/MADE-TOMMY-Regular.woff") format("woff"),
+       url("/fonts/MADE-TOMMY/MADE-TOMMY-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE TOMMY";
+  src: url("/fonts/MADE-TOMMY/MADE-TOMMY-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body{
+  background-color: #FFF8E7;
+  overflow-x: hidden;
+  width: 100dvw;
+  min-height: 100dvh;
+}
+
+.tommy{
+  font-family: "MADE TOMMY", sans-serif;
+}
+
+.edu{
+  font-family: 'Edu SA Beginner', cursive;
+}
+
+.latest-img1 {
+  max-height: 280px;
+  transform: perspective(800px) rotateY(5deg) scale(0.96);
+  transition: transform 0.3s ease;
+}
+
+.latest-img2 {
+  transform: perspective(800px) rotateY(-5deg) scale(0.96);
+  transition: transform 0.3s ease;
+}
