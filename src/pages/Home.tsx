@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import Hero from "../components/Home/Hero";
 import Latest from "../components/Home/Latest";
+import Products from "../components/Home/Products";
+import Category from "../components/Home/Category";
+import Form from "../components/Home/Form";
+import People from "../components/Home/People";
+import About from "../components/Home/About";
 
 const slideVariants = {
   initial: { x: "100%", opacity: 0 }, // Start offscreen right
@@ -25,6 +30,11 @@ export default function Home() {
     >
       <Hero />
       <Latest />
+      <Products />
+      <About />
+      <Category />
+      <People />
+      <Form />
     </motion.main>
   );
 }

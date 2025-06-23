@@ -30,6 +30,7 @@ body{
   overflow-x: hidden;
   width: 100dvw;
   min-height: 100dvh;
+  font-family: "MADE TOMMY", sans-serif;
 }
 
 .tommy{
@@ -49,4 +50,18 @@ body{
 .latest-img2 {
   transform: perspective(800px) rotateY(-5deg) scale(0.96);
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 1023px) {
+  .latest-img1 {
+    transform: scale(0.96);
+  }
+  .latest-img2 {
+    transform: scale(0.96);
+  }
+}
+
+.people_card{
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFBEE 100%);
+  border-radius: 40px;
 }
