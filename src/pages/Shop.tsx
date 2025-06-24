@@ -1,11 +1,6 @@
 import { motion } from "framer-motion";
-import Hero from "../components/Home/Hero";
-import Latest from "../components/Home/Latest";
 import Products from "../components/Home/Products";
 import Category from "../components/Home/Category";
-import Form from "../components/Home/Form";
-import People from "../components/Home/People";
-import About from "../components/Home/About";
 
 const slideVariants = {
   initial: { x: "100%", opacity: 0 }, // Start offscreen right
@@ -13,7 +8,7 @@ const slideVariants = {
   exit: {},
 };
 
-export default function Home() {
+export default function Shop() {
   return (
     <motion.main
       variants={slideVariants}
@@ -28,13 +23,9 @@ export default function Home() {
       }}
       className="min-h-screen h-fit tommy relative w-svw"
     >
-      <Hero />
-      <Latest />
-      <Products title="Our Produts" isSort={true} />
-      <About />
+      <Products title="Popular Products" />
       <Category />
-      <People />
-      <Form />
+      <Products title="Latest Products" />
     </motion.main>
   );
 }

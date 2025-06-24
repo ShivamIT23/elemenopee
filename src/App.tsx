@@ -13,6 +13,10 @@ import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
+import Shop from "./pages/Shop";
+import Product from "./pages/Product";
+import CheckOut from "./pages/CheckOut";
+import Cart from "./pages/Cart";
 
 function AppRoutes() {
   const location = useLocation();
@@ -21,6 +25,10 @@ function AppRoutes() {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/shop/*" element={<Product />} />
+        <Route path="/checkout" element={<CheckOut />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/*" element={<NotFound />} />
         <Route />
       </Routes>
